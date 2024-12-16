@@ -1,0 +1,313 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header Section */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #004d99;
+    padding: 10px 20px;
+    color: white;
+}
+
+.header #logo img {
+    max-height: 100px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #ffcc00;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-box input {
+    padding: 5px;
+    font-size: 1rem;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header.store-header {
+    background-color: #004d99;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+/* Store Items Section */
+.store {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Ensure 3 items per row */
+    gap: 20px; /* Space between grid items */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Individual Item Styling */
+.item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.item h3 {
+    font-size: 1.2rem;
+    color: #004d99;
+    margin: 10px 0;
+}
+
+.item p {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+/* Quantity Controls */
+.quantity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.quantity-input {
+    width: 50px;
+    padding: 5px;
+    text-align: center;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.action-button {
+    padding: 5px 10px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.action-button:hover {
+    background-color: #0056b3;
+}
+
+
+.button-container {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    padding: 12px 20px;
+    font-size: 1rem;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.buy-btn {
+    background-color: #007BFF;
+}
+
+.favorite-btn {
+    background-color:#007BFF;
+}
+
+.apply-favorite-btn {
+    background-color:#007BFF;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+.buy-btn:hover {
+    background-color: #0056b3;
+}
+
+.favorite-btn:hover {
+    background-color: #007BFF;
+}
+
+.apply-favorite-btn:hover {
+    background-color: #007BFF;
+}
+
+.btn:active {
+    transform: translateY(1px);
+}
+
+
+
+
+  
+  /* Mobile-specific Styles */
+  @media (max-width: 768px) {
+    /* Adjust Header */
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+    }
+  
+    .navbar a {
+      padding: 10px 0;
+      border-bottom: 1px solid #ddd;
+    }
+  
+    /* Adjust Product Grid */
+    .store {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+  
+    .item {
+      width: 100%;
+      max-width: 300px;
+      text-align: center;
+    }
+  
+    .item img {
+      width: 100%;
+      height: auto;
+    }
+  
+    /* Adjust Buttons */
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+    }
+  
+    .button-container .btn {
+      width: 80%;
+      padding: 10px;
+      font-size: 16px;
+    }
+  
+    /* Show Search Box on Small Screens */
+    .search-box {
+      display: block;
+      width: 100%;
+      margin-top: 10px;
+    }
+  
+    .search-box input {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+  }
+  
+  /* Extra Small Screens (e.g., Phones) */
+  @media (max-width: 480px) {
+    .header img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .item {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .main-background .main-text {
+      text-align: center;
+      font-size: 18px;
+    }
+  }

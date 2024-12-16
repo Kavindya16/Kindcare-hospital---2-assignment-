@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOME PAGE</title>
+  <link rel="stylesheet" href="./order.css" type="text/css">
+  
+
+</head>
+<header>
+  <section class="header">
+    <a href="#" id="logo"><img src="pic/360_F_514364850_xLOQX6SOY2qcjAIcTowsi3xYvHmhmvs0.jpg" alt="image of hospital"
+        width="300" height="200"></a>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="pharmacy.html">Pharmacy</a>
+      <a href="order.html">Order</a>
+    </nav>
+    <div class="icons">
+
+      <div class="fas fa-users" id="myuser"></div>
+      <div class="fas fa-search" id="search-bar"></div>
+      <div class="fas fa-bars" id="menu-bars"></div>
+    </div>
+    <div class="search-box">
+      <input type="search" placeholder="search here">
+    </div>
+  </section>
+</header>
+
+<body>
+
+  <h1>ORDER</h1>
+
+  <table>
+      <thead>
+          <tr>
+              <th>Item</th>
+              <th>Quantity</th>
+              <th>Action</th>
+          </tr>
+      </thead>
+  </table>
+
+
+  <!--payment form-->
+
+  <div class="container">
+
+    <form action="">
+
+      <div class="row">
+
+        <div class="col">
+
+          <div>
+            <p class="u">Image of Prescription</p>
+            <button>choose file</button>
+            <p class="min">your prescription should not exceed 3MB in size <br> (.pdf,.doc,.docx,.jpg,.jpeg)</p>
+          </div>
+
+          <div class="inputBox">
+            <span>full name :</span>
+            <input type="text" placeholder="name1 name2">
+          </div>
+          <div class="inputBox">
+            <span>email :</span>
+            <input type="email" placeholder="example@example.com">
+          </div>
+          <div class="inputBox">
+            <span>address :</span>
+            <input type="text" placeholder="room - street - locality">
+          </div>
+          <div class="inputBox">
+            <span>city :</span>
+            <input type="text" placeholder="city">
+          </div>
+
+          <div class="flex">
+            <div class="inputBox">
+              <span>state :</span>
+              <input type="text" placeholder="country">
+            </div>
+            <div class="inputBox">
+              <span>zip code :</span>
+              <input type="text" placeholder="------">
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col">
+
+          <h3 class="title">payment</h3>
+
+          <div class="inputBox">
+            <span>cards accepted :</span>
+            <img src="pic/payment.png" alt="cards">
+          </div>
+          <div class="inputBox">
+            <span>name on card :</span>
+            <input type="text" placeholder="mr.name">
+          </div>
+          <div class="inputBox">
+            <span>credit card number :</span>
+            <input type="number" placeholder="2222-2222-3333-4444">
+          </div>
+          <div class="inputBox">
+            <span>exp month :</span>
+            <input type="text" placeholder="month">
+          </div>
+
+          <div class="flex">
+            <div class="inputBox">
+              <span>exp year :</span>
+              <input type="number" placeholder="year">
+            </div>
+            <div class="inputBox">
+              <span>CVV :</span>
+              <input type="text" placeholder="****">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <input type="submit" value="proceed to checkout" class="submit-btn">
+
+
+    </form>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+<footer>
+  
+</footer>
+</html>
